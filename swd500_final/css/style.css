@@ -1,0 +1,166 @@
+.wrapper{
+	width:100%;
+	display:table;
+	background:#8ee6c1;
+	border: 1px solid red;
+	font-family: 'Nunito', sans-serif;
+	
+}
+/* Typography*/
+h1{
+	font-size: 4vw;
+	font-family: 'Nunito', sans-serif;
+}
+p{
+	font-size: 1.25vw;
+	font-family: 'Nunito', sans-serif;
+}
+img{
+	width:100%;
+	height:auto;
+}
+/*media query desktop*/
+@media(min-width:768px){
+	.col-1{
+		width:100%;
+		text-align:center;
+		font-family: 'Nunito', sans-serif;
+}
+	.col-2, .col-3{
+		width:40%;
+		text-align:center;
+		float:left;
+}
+	.col-4, .col-5, .col-6{
+		width:25%;	
+}
+	.col-7, .col-8, .col-9{
+		width:25%;	
+ }
+	.col-11, .col-12{
+		width:30%; 
+ }		
+}
+
+
+
+/*media query tablet*/
+
+@media(max-width:768px){
+	.col-1{display:none;}
+	h1{
+		font-size: 3vw;
+		font-family: 'Nunito', sans-serif;
+	}
+	p{
+		font-size: 1vw;
+		font-family: 'Nunito', sans-serif;
+	}
+	.col-3{display:none;}
+	.col-2{
+		width:80%;
+		text-align:center;
+}
+		.col-4, .col-5, .col-6{
+		width:25%;	
+}
+	.col-7, .col-8, .col-9{
+		width:25%;	 
+ }
+	.col-11, .col-12{
+		width:30%; 
+}
+}
+
+
+/*media query phone*/
+@media(max-width:375px){
+	.col-2, .col-3{display:none;}
+	h1{
+	font-size: 3vw;
+	font-family: 'Nunito', sans-serif;
+}
+	p{
+	font-size: 1vw;
+	font-family: 'Nunito', sans-serif;
+}
+}	
+/*Navigation */
+.nav{
+	list-style-type: none;
+	width:100%;
+	padding:0;
+	
+}
+.active{
+	background-color:orange;
+}
+.nav ul{
+	list-style-type: none;
+	margin:0%;
+	overflow:hidden;
+	background-color:grey;
+	height:60px;
+	font-size: 2vw;
+	font-family: 'Nunito', sans-serif;
+}
+.nav li{
+	float:left;
+	width: 15%;
+	height:20%;
+	padding:1%;
+}
+.nav li a{
+	color:red;
+	text-align:center;
+	padding:1%;
+	text-decoration:none;
+	font-family: 'Nunito', sans-serif;
+}
+.nav li a:hover{
+	background-color:black;
+}
+/*The grid*/
+
+.col-13, .col-14, .col-15, .col-16{
+	width:6.25%;
+	border: 1px solid black;
+}
+.offset-1 {margin-left:6.25%;}
+.offset-2 {margin-left:12.5%;}
+.offset-3 {margin-left:18.75%;}
+.offset-4 {margin-left:25%;}
+.offset-5 {margin-left:31.25%;}
+.offset-6 {margin-left:37.5%;}
+.offset-7{margin-left:43.75%;}
+.offset-8 {margin-left:50%;}
+.offset-9 {margin-left:56.25%;}
+.offset-10{margin-left:62.5%;}
+.offset-11{margin-left:18.75%;}
+.offset-12{margin-left:75%;}
+.offset-13 {margin-left:81.25%;}
+.offset-14{margin-left:87.5%;}
+.offset-15 {margin-left:93.75%;}
+
+/*variables for the grid*/
+[class*='col-'] {
+  float: left;
+ }
+ 
+ * {
+    box-sizing: border-box;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+/*defining rows*/
+.row:before, 
+.row:after {
+     content:"";
+     clear:both;
+	 display: block;
+ }
+
+ 
+
+ 
